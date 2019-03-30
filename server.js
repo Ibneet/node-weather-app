@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('Pokemon.hbs', {
+        pageTitle: 'Pokemon'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         error: 'Not able to connect'
